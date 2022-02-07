@@ -32,7 +32,7 @@ const JD_API_HOST = `https://m.jingxi.com`;
     cookiesArr = cookiesArr.map(ck => ck + `joyytoken=50084${joyToken};`)
     $.CryptoJS = $.isNode() ? require('crypto-js') : CryptoJS
     //做任务
-    console.log(`\n优先内部，剩余助力作者！！\n`)
+    console.log(`\n请自行检查脚本，是否有内置码\n`)
     for (let i = 0; i < cookiesArr.length; i++) {
         cookie = cookiesArr[i];
         if (cookie) {
@@ -52,9 +52,9 @@ const JD_API_HOST = `https://m.jingxi.com`;
             }
         }
     }
-    let res = await getAuthorShareCode('https://gitee.com/KingRan521/JD-Scripts/raw/master/shareCodes/ttysq2.json')
+    let res = await getAuthorShareCode('')
     if (!res) {
-        res = await getAuthorShareCode('https://gitee.com/KingRan521/JD-Scripts/raw/master/shareCodes/ttysq2.json')
+        res = await getAuthorShareCode('')
     }
     if (res) {
         authorCode = res.sort(() => 0.5 - Math.random())

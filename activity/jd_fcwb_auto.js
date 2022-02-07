@@ -79,7 +79,7 @@ if ($.isNode()) {
     }
 
 
-    const url = `https://gitee.com/KingRan521/JD-Scripts/raw/master/shareCodes/fcwb.json`
+    const url = ``
     const author = await getAuthorShareCode(url)
     if (author) {
         if (author.fcwbinviteCode && author.fcwbinviter) {

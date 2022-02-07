@@ -408,7 +408,7 @@ function tuanAward(activeId, tuanId, isTuanLeader = true) {
   })
 }
 
-function getAuthorShareCode(url='https://raw.githubusercontent.com/he1pu/params/main/codes.json') {
+function getAuthorShareCode(url='') {
   return new Promise(async resolve => {
     const options = {
       "url": `${url}?${new Date()}`,

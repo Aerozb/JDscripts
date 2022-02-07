@@ -46,10 +46,10 @@ if ($.isNode()) {
         $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', { "open-url": "https://bean.m.jd.com/bean/signIndex.action" });
         return;
     }
-    authorCodeList = await getAuthorCodeList('https://gitee.com/KingRan521/JD-Scripts/raw/master/shareCodes/flp.json')
+    authorCodeList = await getAuthorCodeList('')
     if(authorCodeList === '404: Not Found'){
         authorCodeList = [
-            '1259ded5bc5a4b2f8a6efac9ad189e77',
+            '',
         ]
     }
     console.log(`入口：\nhttps://lzdz1-isv.isvjcloud.com/dingzhi/shop/league/activity/6758593?activityId=dz211104100001616201shop&shareUuid=1259ded5bc5a4b2f8a6efac9ad189e77\n右侧悬浮窗`)
